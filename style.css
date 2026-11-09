@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #f4f5f7;
+  color: #222;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 4rem 1rem;
+}
+
+.app {
+  width: 100%;
+  max-width: 480px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  padding: 2rem;
+}
+
+h1 {
+  margin: 0 0 1.5rem;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.task-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.task-form input {
+  flex: 1;
+  padding: 0.65rem 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #d7dae0;
+  border-radius: 8px;
+  outline: none;
+}
+
+.task-form input:focus {
+  border-color: #4f6bed;
+}
+
+.task-form button {
+  padding: 0 1.1rem;
+  font-size: 1rem;
+  color: #fff;
+  background: #4f6bed;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.task-form button:hover {
+  background: #3d58d6;
+}
+
+.task-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid #eef0f3;
+}
+
+.task:last-child {
+  border-bottom: none;
+}
+
+.task input[type="checkbox"] {
+  width: 1.1rem;
+  height: 1.1rem;
+  accent-color: #4f6bed;
+  cursor: pointer;
+}
+
+.task-text {
+  flex: 1;
+  word-break: break-word;
+}
+
+.task.completed .task-text {
+  color: #9aa0a8;
+  text-decoration: line-through;
+}
+
+.delete-btn {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.85rem;
+  color: #9aa0a8;
+  background: none;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  color: #d64545;
+  background: #fdecec;
+}
+
+.empty-state {
+  margin: 0;
+  color: #9aa0a8;
+  text-align: center;
+}
